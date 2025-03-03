@@ -3,10 +3,14 @@
 A T-shirt embroidered with conductive thread that plays sounds when the pads are touched.
 
 <p align="center">
-  <img src="embroidery/tshirt-rev1-export.svg" width="200" />
+  <img src="readme/project-preview.jpg" width="200" />
 </p>
 
 ## Embroidery
+
+<p align="center">
+  <img src="embroidery/tshirt-rev1-export.svg" width="200" />
+</p>
 
 Choose your preferred garment and embroider it using a compatible machine.
 The design was created in Inkscape for a 200x280 mm hoop and can be digitized with [Ink/Stich](https://inkstitch.org/).
@@ -16,7 +20,7 @@ Embroider the red areas with conductive thread and use regular embroidery thread
 After assembling hardware, sew the touch-sensing board to the garment.
 Use thick conductive thread to connect the conductive areas to the corresponding pads on the board.
 
-## Hardware setup
+## Hardware
 
 ### Required hardware
 
@@ -32,7 +36,7 @@ For convenience and minimal soldering, the following were also used:
 - [Adafruit PiCowbell Proto](https://www.adafruit.com/product/5200)
 - A JST SH 4-pin cable
 
-## Firmware setup
+## Firmware
 
 1. Install [CircuitPython](https://circuitpython.org/board/raspberry_pi_pico/) on your Pico.
 2. Copy [CircuitPython 9.x libraries](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/tag/20250228) to your pico. You only need a subset of files if you want to save on some space. Copy to `lib/` at least the following:
@@ -40,6 +44,20 @@ For convenience and minimal soldering, the following were also used:
     * `adafruit_debouncer.mpy`
     * `adafruit_mpr121.mpy`
     * `adafruit_ticks.mpy`
+
+## Enclosure
+
+<p align="center">
+  <img src="readme/enclosure-preview.png" width="200" />
+</p>
+
+This is currently more of a backplate and is entirely optional.
+Cut the backplate (`laser-outline-rev1.pdf`) from 3 mm acrylic using a laser cutter.
+Print two copies each of `holder-top.3mf` and `holder-bottom.3mf` using a 3D printer.
+Sandwich the PCB under the clamps and secure it with four M3x13 mm screws.
+Thread 1-inch webbing through the loops in the bottom parts and attach a side-release buckle to the free ends.
+You can finish the ends of the webbing on a sewing machine.
+
 
 ## Acknowledgements
 
